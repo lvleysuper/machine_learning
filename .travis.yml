@@ -10,4 +10,4 @@ python:
 install:
   - pip install numpy
 script:
-  - pytest
+  - pytest network.py

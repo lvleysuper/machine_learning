@@ -28,6 +28,8 @@ class Network(object):
 		self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
 		self.weights = [np.random.randn(y, x) for x, y in zip(sizes[:-1], sizes[1:])]
 
+def func(x):
+	return x + 1
 
-def test_numpy():
-	assert 'a'*3 == 'aaa'
+def test_answer():
+	assert func(3) == 4
